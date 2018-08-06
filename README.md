@@ -2,6 +2,7 @@ The domain of this git repository is recommendation system attacks.
 Attack file are given, reputation adjustment algorithms and there comparision methods are implemented (each python file is well documented).
 
 ---Attack file and RA.py file---
+
 In particular different attack files are given in "attack files" folder.
 Each attack type has different number of inserted attackers (father folder).
 For example "Average Nuke 100" means the attack is "Average Nuke" and there are 100 attackers inserted.
@@ -11,6 +12,7 @@ For more information please see the RA.py file and the "Improving the True-Reput
 To create the attack files please run "CreateRatingAttackFiles" function in RA.py file
 
 ---Reputation algorithm and ReputationAlgorithms.py file---
+
 The reputation adjustment algorithm that were implemented are arithmetic mean, true reputation, true reputation improved.
 A reputation algorithm gets all user item ratings and returns a reputation vector (algorithm depended).
 "Arithmetic Mean" returns a reputation vector that contains for each movie its arithmetic mean.
@@ -19,6 +21,7 @@ A reputation algorithm gets all user item ratings and returns a reputation vecto
 The algorithms are implemented in the ReputationAlgorithms.py file.
 
 ---Comparision/Plot methods and RunAttacks.py file---
+
 Different comparision methods are implemented.
 Evaluation of the effectiveness of each new improvement in the "improved true reputation" algorithm (user age, movie age, const cutoff, percentile cutoff) using comparision plots.
 Comparision and plot between "Improved True Reputation" to "Arithmetic Mean" and "True Reputation" for different attack types.
@@ -26,5 +29,6 @@ Implementation and more details can be found in  RunAttacks.py file.
 Results can be found in the "Improving the True-Reputation Algorithm by Age Parameters.pdf" paper.
 
 ---Run example and Main.py file---
+
 Finally the Main.py is an example python file that performs an attack and compares different reputation adjustment algorithms.
 The algorithms are implemented in the Main.py file.
